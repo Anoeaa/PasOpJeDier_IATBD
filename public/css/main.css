@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito' , sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root{
+    --primary-color: #005f37;
+    --secondary-color: #52b788;
+    --tertiary-color: #35363a;
+    --accent-color: #618edb;
+    --cancel-color: #A44A3F;
+
+    --background-color: #1f1f1f;
+    --background-background-color: #191919;
+    --text-color: #ffff;
+}
+
+body{
+    width: 100%;
+    background-color: var(--background-background-color);
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1.5rem;
+}
+
+h6{
+    font-size: 1.5rem;
+}
+
+a, .app_content_article_form_button, .app_content_article_section_form_button{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* default.blade.php */
+
+.app_header{
+    display: inline-block;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 1;
+}
+
+.app_header_section{
+    position: relative;
+    margin: 0 auto;
+    max-width: 95rem;
+}
+
+.app_header_figure{
+    display: inline;
+}
+
+
+.app_header_title{
+    display: inline-block;
+    color: var(--text-color);
+    max-width: fit-content;
+}
+
+.app_header_button{
+    float: right;
+    font-size: 4rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.app_header_nav{
+    top: 6.77rem;
+    right: -1rem;
+    width: 0;
+    max-width: 25rem;
+    height: fit-content;
+    position: absolute;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    transition: .5s;
+}
+
+.app_header_nav_list{
+    padding: 2rem;
+    white-space: nowrap;
+}
+
+.app_header_nav_list_item{
+    padding: 1rem;
+}
+
+.app_header_nav_list_item_link{
+    color: var(--text-color);
+    text-decoration: none;
+    background: none;
+    font-size: 3rem;
+}
+
+.app_content{
+    width: 100%;
+    min-height: 95vh;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 2rem 5%;
+    background-color: var(--background-color);
+}
+
+/* index.blade.php */
+.app_content_article{
+  position: relative;
+}
+
+.app_content_article_title{
+  margin-bottom: 2rem;
+}
+
+.app_content_article_section_input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.app_content_article_section_title{
+    width: fit-content;
+    display: inline-block;
+}
+
+.app_content_article_section_list{
+    width: 100%;
+    max-width: 65rem;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+.app_content_article_section_list--middle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.app_content_article_section_list_item{
+    padding: .7rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.app_content_article_section_list_item_input--checkbox{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.app_content_article_section--animals{
+    
+    margin: 0 auto;
+    
+}
+
+.app_content_article_section_link{
+    float: right;
+}
+
+/* animalCard.blade.php */
+.app_content_article_section--application{
+    margin: 2rem 0;
+}
+
+.app_content_article_section_list_item--animal{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.app_content_article_section_list_item_section--animal{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.app_content_article_section_list_item--profileImage{
+    padding: 0;
+}
+
+.app_content_article_section_list_item_figure{
+    width: 32rem;
+    height: 32rem;
+    margin: 0 auto;
+}
+
+.app_content_article_section_list_item_figure_img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+.app_content_article_section_list_item_salary{
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+}
+
+.app_content_article_section_list_item_link--remove{
+    background-color: var(--cancel-color);
+}
+
+/* userProfile.blade.php */
+.app_content_article_section_list_item_figure{
+    width: 100%;
+}
+
+.app_content_article_section_list_item_figure_image{
+    width: 100%;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+/* applicationCard.blade.php */
+.app_content_article_section_list_item--profile{
+    width: 100%;
+    background-color: var(--tertiary-color);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.app_content_article_section_list_item_title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.app_content_article_section_list_item_link--left{
+    float: left;
+}
+
+.app_content_article_section_list_item_link--right{
+    float: right;
+    margin-left: 1rem;
+}
+
+/* animalProfile.blade.php */
+
+.app_content_article_form_button{
+    border: none;
+}
+
+.app_content_article_title--animal{
+    margin-bottom: 1rem;
+}
+
+.app_content_article_title--animal--info{
+    margin-bottom: 0;
+}
+
+.app_content_article_title--animal--price{
+    position: absolute;
+    top: .5rem;
+    right: 0;
+}
+
+.app_content_article_button{
+    background-color: var(--cancel-color);
+}
+
+/* uploadImage.blade.php */
+
+.app_content_article_form_label{
+    font-size: 1.8rem;
+}
+
+.app_content_article_form_input--image{
+    font-size: 1.6rem;
+    margin: .5rem 0 2rem 0;
+}
+
+/* makeApplication.blade.php */
+.app_content_article_form{
+    margin-bottom: 2rem;
+}
+
+.app_content_article_form_label{
+    display: block;
+}
+
+.app_content_article_form_input, .app_content_article_form_select{
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.app_content_article_form_input--comment{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+/* makeReview.blade.php */
+
+.app_content_article_section_link--cancel{
+    background-color: var(--cancel-color);
+
+}
+
+/* admin.blade.php*/
+.app_content_article_section_form_label{
+    display: block;
+    font-size: 1.7rem;
+}
+
+.app_content_article_section_form_button{
+    border: none;
+    float: right;
+    width: 23%;
+    background-color: var(--cancel-color);
+}
+
+.app_content_article_section_form_input{
+    padding: .5rem;
+    width: 74%;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.app_content_article_section--ban{
+    margin-bottom: 2rem;
+}
+
+
+
+/* banned.blade.php */
+.banned{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.banned_title{
+    margin-bottom: 2rem;
+}
+
+.banned_button{
+    background-color: var(--cancel-color);
+}

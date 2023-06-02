@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color: #005f37;
+    --secondary-color: #52b788;
+    --tertiary-color: #35363a;
+    --accent-color: #618edb;
+    --cancel-color: #A44A3F;
+
+    --background-color: #1f1f1f;
+    --text-color: #ffff;
+}
+
+div{
+    background-color: var(--background-color) !important;
+}
+
+*{
+    color: var(--text-color) !important;
+}
+
+.login_input, .login_check{
+    background-color: var(--text-color) !important;
+    color: #1f1f1f !important;
+}
+
+.login_title{
+    font-size: 3rem;
+}
+
+.login_button{
+    background-color: var(--primary-color) !important;
+}
+
+.login_button--register{
+    font-size: .8rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}

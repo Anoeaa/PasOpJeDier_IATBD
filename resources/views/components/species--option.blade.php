@@ -1,0 +1,1 @@
+<option value="{{$breed->breed}}" class='app_content_article_form_select_option'>{{$breed->breed}}</option>
